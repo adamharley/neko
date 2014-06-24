@@ -17,7 +17,7 @@ function save_options() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restore_options() {
-  chrome.storage.sync.get("type", function(items) {
+  chrome.storage.sync.get(['type','startNekoX','startNekoX'], function(items) {
   	if (items) {
       document.getElementById('type').value = items.type ? items.type : 'white';
       document.getElementById('type').dispatchEvent(new Event('change'));
