@@ -3,7 +3,7 @@
 
   "name": "Neko",
   "description": "Nya~",
-  "version": "20140624",
+  "version": "0.1",
 
   "content_scripts": [
   	{
