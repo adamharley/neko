@@ -3,13 +3,13 @@
 
   "name": "Neko",
   "description": "Nya~",
-  "version": "0.1.1",
+  "version": "0.1.2",
 
   "content_scripts": [
   	{
       "matches": [
-        "*://ssu.unioncloud.org/administrator/*"
-  	  ],
+        "*://su.sheffield.ac.uk/administrator/*"
+  	  ]
   	  "js": ["config.js"],
   	  "run_at": "document_end"
   	}
