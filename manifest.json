@@ -3,13 +3,16 @@
 
   "name": "Neko",
   "description": "Nya~",
-  "version": "0.1.2",
+  "version": "0.1.3",
 
   "content_scripts": [
   	{
       "matches": [
         "*://su.sheffield.ac.uk/administrator/*"
-  	  ]
+  	  ],
+  	  "exclude_matches": [
+  	  	"*://su.sheffield.ac.uk/administrator/sites/*/ckeditor/dialog?*"
+  	  ],
   	  "js": ["config.js"],
   	  "run_at": "document_end"
   	}
