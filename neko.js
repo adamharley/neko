@@ -287,7 +287,7 @@ function Neko ( x,y,active,imagedirectory ) {
 
 	var strNekoObj="aNekos["+this.whichNeko+"]";
 
-	var strContent="<a onclick=\""+strNekoObj+".active = !"+strNekoObj+".active;return false;\" onfocus=\"this.blur()\"><img border=\"0\" id=\"neko\" name=\""+strImage+"\" src=\""+strImageSrc+"\" /></a>";
+	var strContent="<a onclick=\""+strNekoObj+".active = !"+strNekoObj+".active;return false;\" onfocus=\"this.blur()\"><img border=\"0\" id=\"neko\" name=\""+strImage+"\" onerror=\"this.style.display='none;'\" src=\""+strImageSrc+"\" /></a>";
 
 	this.layer=createLayer ( strLayer, x, y, 32, 32, strContent );
 
